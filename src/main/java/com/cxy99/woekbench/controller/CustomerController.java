@@ -41,7 +41,9 @@ public class CustomerController {
     public String index(HttpServletRequest request){
         List<User> userList = userService.queryAllUsers();
         request.setAttribute("userList",userList);
+        System.out.println("wwww");
         return "workbench/customer/index";
+
     }
 
     @RequestMapping("/workbench/customer/queryCustomerForPage.do")
