@@ -41,7 +41,7 @@ public class CustomerController {
     public String index(HttpServletRequest request){
         List<User> userList = userService.queryAllUsers();
         request.setAttribute("userList",userList);
-        System.out.println("wwww");
+        System.out.println("hot-fix");
         return "workbench/customer/index";
 
     }
